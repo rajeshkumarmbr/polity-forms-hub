@@ -26,7 +26,7 @@ const ServiceCard = ({ icon: Icon, title, description, processingTime }: Service
           </p>
         )}
         <Button className="w-full group-hover:bg-accent transition-colors">
-          Apply Now
+          Learn More
         </Button>
       </CardContent>
     </Card>
