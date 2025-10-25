@@ -1,0 +1,242 @@
+import {
+  FileText,
+  CreditCard,
+  UserCheck,
+  Vote,
+  Building2,
+  Briefcase,
+  Home,
+  Car,
+  GraduationCap,
+  Plane,
+  Shield,
+  FileCheck,
+  Stamp,
+  Wallet,
+  Users,
+  Receipt,
+  FileSpreadsheet,
+  Globe,
+  Landmark,
+  Package,
+} from "lucide-react";
+
+export interface Service {
+  id: string;
+  icon: any;
+  title: string;
+  description: string;
+  processingTime: string;
+  category: string;
+}
+
+export const services: Service[] = [
+  {
+    id: "pan-card",
+    icon: CreditCard,
+    title: "PAN Card Application",
+    description: "New PAN card application and correction services with fast processing.",
+    processingTime: "7-10 days",
+    category: "Identity Documents",
+  },
+  {
+    id: "aadhar-services",
+    icon: UserCheck,
+    title: "Aadhar Services",
+    description: "Aadhar card enrollment, correction, and update services.",
+    processingTime: "5-7 days",
+    category: "Identity Documents",
+  },
+  {
+    id: "voter-id",
+    icon: Vote,
+    title: "Voter ID Services",
+    description: "New voter ID registration, correction, and address change.",
+    processingTime: "10-15 days",
+    category: "Identity Documents",
+  },
+  {
+    id: "passport",
+    icon: Plane,
+    title: "Passport Services",
+    description: "New passport application, renewal, and tatkal services.",
+    processingTime: "15-30 days",
+    category: "Identity Documents",
+  },
+  {
+    id: "gst-registration",
+    icon: Receipt,
+    title: "GST Registration",
+    description: "Complete GST registration and compliance services for businesses.",
+    processingTime: "3-5 days",
+    category: "Business Services",
+  },
+  {
+    id: "business-license",
+    icon: Briefcase,
+    title: "Business License",
+    description: "Shop establishment, trade license, and business registration.",
+    processingTime: "7-14 days",
+    category: "Business Services",
+  },
+  {
+    id: "msme-registration",
+    icon: Building2,
+    title: "MSME Registration",
+    description: "Udyog Aadhar and MSME registration for small businesses.",
+    processingTime: "2-3 days",
+    category: "Business Services",
+  },
+  {
+    id: "fssai-license",
+    icon: Stamp,
+    title: "FSSAI License",
+    description: "Food safety and standards license for food businesses.",
+    processingTime: "15-20 days",
+    category: "Business Services",
+  },
+  {
+    id: "trademark-registration",
+    icon: Shield,
+    title: "Trademark Registration",
+    description: "Brand name and logo registration and protection services.",
+    processingTime: "6-8 months",
+    category: "Business Services",
+  },
+  {
+    id: "income-certificate",
+    icon: FileText,
+    title: "Income Certificate",
+    description: "Income certificate for government schemes and educational benefits.",
+    processingTime: "7-10 days",
+    category: "Certificates",
+  },
+  {
+    id: "caste-certificate",
+    icon: FileCheck,
+    title: "Caste Certificate",
+    description: "SC/ST/OBC caste certificate for reservation benefits.",
+    processingTime: "10-15 days",
+    category: "Certificates",
+  },
+  {
+    id: "domicile-certificate",
+    icon: Home,
+    title: "Domicile Certificate",
+    description: "Residence proof certificate for state-specific benefits.",
+    processingTime: "7-10 days",
+    category: "Certificates",
+  },
+  {
+    id: "birth-certificate",
+    icon: Users,
+    title: "Birth Certificate",
+    description: "Birth certificate registration and correction services.",
+    processingTime: "5-7 days",
+    category: "Certificates",
+  },
+  {
+    id: "death-certificate",
+    icon: FileText,
+    title: "Death Certificate",
+    description: "Death certificate registration for legal purposes.",
+    processingTime: "5-7 days",
+    category: "Certificates",
+  },
+  {
+    id: "driving-license",
+    icon: Car,
+    title: "Driving License",
+    description: "New driving license, renewal, and international permit services.",
+    processingTime: "15-20 days",
+    category: "Vehicle Services",
+  },
+  {
+    id: "vehicle-registration",
+    icon: Car,
+    title: "Vehicle Registration",
+    description: "New vehicle registration and RC transfer services.",
+    processingTime: "7-10 days",
+    category: "Vehicle Services",
+  },
+  {
+    id: "scholarship",
+    icon: GraduationCap,
+    title: "Scholarship Application",
+    description: "Government scholarship applications for students.",
+    processingTime: "30-45 days",
+    category: "Educational",
+  },
+  {
+    id: "ration-card",
+    icon: Wallet,
+    title: "Ration Card",
+    description: "New ration card application and corrections.",
+    processingTime: "15-30 days",
+    category: "Welfare",
+  },
+  {
+    id: "pension-schemes",
+    icon: Users,
+    title: "Pension Schemes",
+    description: "Old age pension, widow pension, and disability pension applications.",
+    processingTime: "20-30 days",
+    category: "Welfare",
+  },
+  {
+    id: "property-registration",
+    icon: Home,
+    title: "Property Registration",
+    description: "Property sale deed and title deed registration services.",
+    processingTime: "7-15 days",
+    category: "Property",
+  },
+  {
+    id: "import-export-code",
+    icon: Globe,
+    title: "Import Export Code",
+    description: "IEC registration for international trade businesses.",
+    processingTime: "3-5 days",
+    category: "Business Services",
+  },
+  {
+    id: "bank-account",
+    icon: Landmark,
+    title: "Bank Account Opening",
+    description: "Assisted bank account opening with all documentation.",
+    processingTime: "1-2 days",
+    category: "Financial",
+  },
+  {
+    id: "insurance-services",
+    icon: Shield,
+    title: "Insurance Services",
+    description: "Life, health, and vehicle insurance policy applications.",
+    processingTime: "3-7 days",
+    category: "Financial",
+  },
+  {
+    id: "courier-services",
+    icon: Package,
+    title: "Courier & Delivery",
+    description: "Document courier and parcel delivery services.",
+    processingTime: "2-5 days",
+    category: "Logistics",
+  },
+  {
+    id: "utility-bills",
+    icon: FileSpreadsheet,
+    title: "Utility Bill Payments",
+    description: "Electricity, water, gas bill payments and connections.",
+    processingTime: "Instant",
+    category: "Utilities",
+  },
+];
+
+export const getServicesByCategory = (category: string) => {
+  return services.filter((service) => service.category === category);
+};
+
+export const getAllCategories = () => {
+  return [...new Set(services.map((service) => service.category))];
+};
