@@ -1,4 +1,5 @@
 import { LucideIcon } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -25,8 +26,8 @@ const ServiceCard = ({ icon: Icon, title, description, processingTime }: Service
             Processing Time: <span className="font-medium text-foreground">{processingTime}</span>
           </p>
         )}
-        <Button className="w-full group-hover:bg-accent transition-colors">
-          Learn More
+        <Button asChild className="w-full group-hover:bg-accent transition-colors">
+          <Link to="/contact">Learn More</Link>
         </Button>
       </CardContent>
     </Card>
